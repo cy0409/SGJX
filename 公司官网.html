@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拾光匠星文化传媒有限公司</title>
+    <style>
+        /* 基础样式重置与全局设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            padding: 0 15px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        /* 标题样式 */
+        .company-title {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .company-title h1 {
+            font-size: clamp(24px, 5vw, 32px);
+            color: #2c3e50;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        .company-title h1::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #3498db;
+        }
+        .company-slogan {
+            font-size: clamp(16px, 3vw, 18px);
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 15px;
+        }
+        /* 内容布局样式 */
+        .content-section {
+            margin: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+        .content-img {
+            flex: 1;
+            min-width: 300px;
+        }
+        .content-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        /* 图片容器样式 */
+        .img-container {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #eee;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        .img-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        .img-container:hover img {
+            transform: scale(1.03);
+        }
+        /* 文字内容样式 */
+        .text-content h2 {
+            font-size: clamp(18px, 3vw, 22px);
+            color: #2c3e50;
+            margin: 20px 0 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .text-content p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .text-content ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        .text-content li {
+            margin-bottom: 12px;
+            font-size: 16px;
+            transition: color 0.2s ease;
+        }
+        .text-content li:hover {
+            color: #3498db;
+        }
+        /* 轮播图样式 */
+        #person-img-slider {
+            position: relative;
+        }
+        .slider-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+        .slider-img.active {
+            opacity: 1;
+            position: relative;
+        }
+        /* 底部联系信息样式 */
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .contact-info p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .contact-info strong {
+            color: #2c3e50;
+        }
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .content-section {
+                flex-direction: column;
+            }
+            .reverse {
+                flex-direction: column-reverse;
+            }
+            .img-container {
+                height: 250px;
+            }
+            .contact-info {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 公司标题与标语 -->
+        <div class="company-title">
+            <h1>拾光匠星文化传媒有限公司</h1>
+            <div class="company-slogan">—— 专注内容，守护梦想 ——</div>
+        </div>
+
+        <!-- 公司简介部分 -->
+        <div class="content-section">
+            <div class="content-img">
+                <div class="img-container">
+                    <img src="图1.jpg" alt="拾光匠星文化传媒有限公司-图1">
+                </div>
+            </div>
+            <div class="content-text text-content">
+                <p>我司成立于2016年七月，是一家充满活力与创意的综合性文化传媒公司。我们或许规模不大，但我们拥有宏大的梦想和对品质的执着追求。我们专注于新生代艺人孵化、短视频内容制作与营销、原创音乐制作，致力于为市场带来新鲜、有趣、有温度的娱乐内容。</p>
+                
+                <h2>我们的核心聚焦：</h2>
+                <ul>
+                    <li><strong>个性化艺人经纪：</strong>我们不以量取胜，而是专注于为少数极具潜力的艺人提供“量身定制”的成长方案。从专业培训、形象定位到宣传推广，我们像家人一样陪伴与守护，深耕细作，助力每一位合作伙伴闪耀独特的星光。</li>
+                    <li><strong>精品内容制作：</strong>我们是内容的“手艺人”。专注于打造高质量的短视频、微短剧、原创音乐等。我们深谙互联网传播规律，能以小预算、强创意，实现内容影响力的最大化。</li>
+                    <li><strong>本地活动策划与执行：</strong>我们扎根于本地，为企业、品牌及机构提供专业、高效的活动策划与执行服务，包括品牌发布会、商演、小型演唱会及粉丝见面会等。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 艺人展示轮播 -->
+        <div class="content-section reverse">
+            <div class="content-text text-content">
+                <h2>我们的独特优势：</h2>
+                <ul>
+                    <li><strong>高度灵活，反应迅速：</strong>没有大公司的层级壁垒，我们能快速响应市场变化，与客户和合作伙伴保持紧密、直接的沟通，确保每一个想法都能被高效执行。</li>
+                    <li><strong>充满热忱的精英团队：</strong>核心团队成员均来自行业一线，我们虽是小团队，但拥有丰富的实战经验和无限的创作热情，将每一份托付都视为最重要的作品。</li>
+                    <li><strong>共赢的合作模式：</strong>我们珍视每一次合作，愿意与艺人、客户及合作伙伴共同成长，建立透明、互信、长期的伙伴关系，共享成功果实。</li>
+                </ul>
+            </div>
+            <div class="content-img">
+                <div class="img-container" id="person-img-slider">
+                    <!-- 循环播放图片：人1.jpg、人2.jpg、人3.jpg、人4.jpg、人5.jpg -->
+                    <img src="人1.jpg" alt="艺人相关图片-人1" class="slider-img active">
+                    <img src="人2.jpg" alt="艺人相关图片-人2" class="slider-img">
+                    <img src="人3.jpg" alt="艺人相关图片-人3" class="slider-img">
+                    <img src="人4.jpg" alt="艺人相关图片-人4" class="slider-img">
+                    <img src="人5.jpg" alt="艺人相关图片-人5" class="slider-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- 愿景与承诺 -->
+        <div class="content-section">
+            <div class="content-img">
+                <div class="img-container">
+                    <img src="图2.jpg" alt="拾光匠星文化传媒有限公司-图2">
+                </div>
+            </div>
+            <div class="content-text text-content">
+                <h2>我们的愿景与承诺：</h2>
+                <p>我们相信，伟大的梦想始于小小的舞台。拾光匠星文化传媒有限公司愿成为所有怀才未遇者的第一座灯塔，所有新奇想法的第一个试验场。我们以最大的诚意和专业，守护每一份热爱，创造无限可能。与我们携手，从小舞台，走向大世界。</p>
+            </div>
+        </div>
+
+        <!-- 底部联系信息 -->
+        <div class="contact-info">
+            <p><strong>公司地址：</strong>广州市天河区黄埔大道中310号8栋201室</p>
+            <p><strong>公司电话：</strong>13603868930</p>
+            <p><strong>电子邮箱：</strong>contact@shiguangmedia.com</p>
+        </div>
+    </div>
+
+    <!-- 图片循环播放脚本 -->
+    <script>
+        // 获取所有“人系列”图片元素
+        const sliderImgs = document.querySelectorAll('.slider-img');
+        let currentIndex = 0;
+        const imgCount = sliderImgs.length;
+
+        // 自动切换图片（3秒/张）
+        function changeImg() {
+            // 隐藏当前显示的图片
+            sliderImgs[currentIndex].classList.remove('active');
+            // 更新索引（循环）
+            currentIndex = (currentIndex + 1) % imgCount;
+            // 显示下一张图片
+            sliderImgs[currentIndex].classList.add('active');
+        }
+
+        // 初始启动循环（3000毫秒 = 3秒）
+        let sliderInterval = setInterval(changeImg, 3000);
+
+        // 鼠标悬停时暂停轮播，离开时继续
+        const sliderContainer = document.getElementById('person-img-slider');
+        sliderContainer.addEventListener('mouseenter', () => {
+            clearInterval(sliderInterval);
+        });
+        sliderContainer.addEventListener('mouseleave', () => {
+            sliderInterval = setInterval(changeImg, 3000);
+        });
+    </script>
+</body>
+</html>
